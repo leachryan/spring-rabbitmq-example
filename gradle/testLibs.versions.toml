@@ -1,0 +1,7 @@
+[versions]
+springBoot = "3.2.5"
+
+[libraries]
+springBootStarterTest = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBoot" }
+springRabbitTest = { module = "org.springframework.amqp:spring-rabbit-test", version.ref = "springBoot" }
+junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version = "latest.release" }
