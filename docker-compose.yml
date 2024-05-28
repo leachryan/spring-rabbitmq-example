@@ -1,0 +1,10 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.13.2-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"   # RabbitMQ main port
+      - "15672:15672" # RabbitMQ management console
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbituser
+      RABBITMQ_DEFAULT_PASS: password
