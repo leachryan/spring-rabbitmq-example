@@ -1,10 +1,11 @@
 [versions]
-springBoot = "3.2.5"
+springBoot = "3.1.5"
 springDependencyManagement = "1.1.4"
 kotlin = "1.9.23"
 java = "21"
 
 [libraries]
+springBootStarterJson = { module = "org.springframework.boot:spring-boot-starter-json", version.ref = "springBoot" }
 springBootStarterAmqp = { module = "org.springframework.boot:spring-boot-starter-amqp", version.ref = "springBoot" }
 kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 springRabbitStream = { module = "org.springframework.amqp:spring-rabbit-stream", version.ref = "springBoot" }

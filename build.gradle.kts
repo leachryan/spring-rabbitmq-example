@@ -20,11 +20,14 @@ repositories {
 
 dependencies {
 	implementation(libs.springBootStarterAmqp)
+	implementation(libs.springBootStarterJson)
 	implementation(libs.kotlinReflect)
 	implementation(libs.springRabbitStream)
 	testImplementation(testLibs.springBootStarterTest)
 	testImplementation(testLibs.springRabbitTest)
 	testRuntimeOnly(testLibs.junitPlatformLauncher)
+
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 }
 
 tasks.withType<KotlinCompile> {
